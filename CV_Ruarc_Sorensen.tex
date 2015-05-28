@@ -1,0 +1,219 @@
+\documentclass[a4,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{pifont}
+\usepackage{comment} 
+\usepackage{hyperref}
+
+%-----------------------------------------------------------
+%Ruarc:
+%I use my own colour here. Top line selected
+%gives grey boxes around headings.
+%Second option allows me to select my own colour
+%(current one is turquoise) by changing red,green,blue
+%settings. Not sure how this will come out in black and white.
+
+%\definecolor{mycolour}{gray}{0.9}
+%\definecolor{mycolour}{rgb}{0,0.8,0.66} %this a greeny turquoise
+%\definecolor{mycolour}{rgb}{0,0.75,0.95} %this a light blue
+%\definecolor{mycolour}{rgb}{0,0.3,1} %this a stronger blue
+\definecolor{mycolour}{rgb}{1,1,1} %...or just leave them white
+%-----------------------------------------------------------
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-0pt}}
+\newcommand{\resheading}[1]{\large \colorbox{mycolour}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#2} \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-5pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\LARGE Ruarc Sorensen}
+\vspace{10pt} \\
+
+\emph{Current address:}  & +447760173732\\
+%+353876338964 \\
+
+4 Westbourne Place &  ruarcs@gmail.com \\
+%ruarcs@gmail.com \\
+  
+Bristol \\
+
+BS8 1RZ \\
+
+United Kingdom \\
+
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{\textit{Work Experience}\vspace{-5mm}}
+ \line(1, 0){532}
+  \vspace{-0.07in}
+\begin{itemize}
+
+\item
+	\ressubheading{Waratek Ltd.}{Oct 2013 - February 2015}{Software Engineer}{}
+	\begin{itemize}
+			\resitem{Working on a multitenant Java Virtual Machine, gaining in-depth knowledge of both the Java language and the Java Virtual Machine, including aspects such as GC behaviour, native code and bytecode debugging. Demand for optimal performance combined with a keen culture of peer code review resulted in skills being developed in writing clean, high-performance Java code.}
+                          \resitem{ Using a wide variety of modern software tools, including DVCS (git and mercurial) for version control, JIRA for issue tracking, Reviewboard for distributed peer code review, Jenkins and Teamcity for Continuous Integration, and Docker for test environment provisioning.}
+			\resitem{Contributed to internal tooling written in Python.}
+		\resitem{Nature of work resulted in exposure every day to algorithmic and data structure analysis and other core programming skills usually hidden from programmers in standard libraries.}
+		\resitem{Working in a young, fast-growing company has given me the chance to take on and to own critical software projects from start to finish, through design, implementation, internal and external test, and customer rollout.}
+		\resitem{Java, Python \emph{Also:} Scala}
+	\end{itemize}
+\item
+
+  \vspace{-6mm}
+
+\item
+	\ressubheading{Cylon Controls Ltd.}{Sept 2011 - Oct 2013}{Software Engineer}{}
+	\begin{itemize}
+			\resitem{Two years of experience producing clean, fully objected-orientated, efficient C++, subject to constant peer review and working to tight deadlines. Experience in the use of version control tools including SVN and git. Development of many types of software, ranging from desktop applications to embedded code to web-based tools. }
+		\resitem{Responsibilities included roadmap-driven development work and also maintenance of code base and bug-fixing. }
+		\resitem{Learned skills only available through being a working programmer, including designing software specification documents, unit testing, UI design, designing test cases for use by QA team, etc.}
+		\resitem{C++, \emph{Also:} Python, C\#, Javascript, HTML}
+	\end{itemize}
+\item
+
+\end{itemize}
+
+\vspace{-10mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\textit{Education}\vspace{-5mm}}
+%%%%% THIS IS THE IMPORTANT BIT!! %%%%%%%%%%%%%%%%%
+\line(1, 0){532}
+ \vspace{-0.07in}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+	\ressubheading{University of Manchester}{Sept. 2010 - September 2011}{MSc Advanced Control and Systems Engineering (One calender year)}{}
+	\begin{itemize}	
+	 \item[$\--$]{Supervisor: \hspace{-3mm} Prof. \hspace{-2.5mm} Barry Lennox, Dept.  \hspace{-2.5mm}  of Electronic Engineering,  University of Manchester.}
+	\item{Degree award of ``MSc with Merit".}
+	\item Focus on advanced system control and analysis. Examples of subjects: Intelligent Systems, Digital Control, Nonlinear Control, Advanced Statistics. Extensive use of Matlab, Simulink.
+	\item{MSc Dissertation: ``Modelling and Control of Localised Positioning System''  \emph{Duration: 5 months (full time)}}
+	\begin{itemize}
+	\item[$\--$]{Construct accurate non-linear model of robot buggy system using modelling tools.}
+	\item[$\--$]{Build 3D simulation to enable model to be used in undergraduate teaching.}
+	\item[$\--$]{Design control and sensing system using PIC microcontroller (programmed using a mixture of C  and assembly language) to allow buggy to determine its location and navigate a simple course.}
+	\item[$\--$]{Strong programming aspect to this project, allowing me to work on my C programming skills.}	
+	\end{itemize}
+	\end{itemize}	
+\item
+	\ressubheading{University College Dublin}{Sept. 2006 - May 2010}{Honours Bachelor of Electronic Engineering (Four years)}{}
+	\begin{itemize}
+		\resitem{Awarded upper second-class honours.}
+	\resitem{Examples of subjects: Advanced DSP, Processor Design, Data Structures and Algorithms, C++ Programming, Wireless Systems, Digital System Design, Communication Theory.  Continuous laboratory exercises using C/C++, FPGAs, digital system modelling tools etc.}\vspace{1pt} \\
+	\resitem{{Final Year Project: ``Safety in Switched Control Systems''} \quad \qquad \qquad \quad \enspace {\emph{Duration: 8 months}}  \vspace{-4pt}\\
+			      \begin{itemize}
+			      \resitem[$\--$]{Supervisor \hspace{-2mm} : Dr \hspace{-2mm} Paul Curran, Dept. \hspace{-2.4mm} of Electronic Engineering, \hspace{-2mm} UCD}}
+			      \resitem[$\--$]{Built understanding of mathematics underpinning stability theory. Project overall was highly mathematical and significantly grew my knowledge of advanced mathematics.}
+			      \resitem[$\--$]{Constructed, using Matlab, numerical program to determine truth of given proposition.}
+			      \resitem[$\--$]{Analysed and drew conclusions from results and presented findings in an accessible  form.}
+			      \resitem[$\--$]{Topics involved include: Lyapunov functions, asymptotic stability, proof of stability of systems, switched control systems. \vspace{-3pt}}
+			      \resitem[$\--$]{Strong programming aspect to this project, allowing me to work on my higher-level programming skills using Matlab, a Python-like dynamically-typed language.}				      
+%			      \resitem[$\--$]{Aims: \vspace{-3pt}}
+%			      	\begin{itemize}
+%				\resitem{Find effective way of determining the existence of matrix norms which can act as  Lyapunov functions, in order to prove system stability.}
+%				\resitem{Find sufficient and/or necessary conditions for the existence of a matrix norm 
+%					       to act as Lyapunov function for a given system.}
+%%			         \resitem{Test truth of conjecture at higher orders.}
+%				\end{itemize}
+			      \end{itemize}
+%		\resitem{Areas of particular interest include: Control Theory, Digital Signal Processing, Engineering Mathematics.}
+	\end{itemize}
+	
+	
+\end{itemize}
+
+\vspace{2pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{\textit{Research Experience} \vspace{-5mm}}
+ \line(1, 0){532}
+ \vspace{-0.07in}
+\begin{itemize}
+
+\item
+	\ressubheading{Vehicle Localisation Research, UCD}{June 2010 - August 2010}{Research assistant}{}
+	\begin{itemize}
+		\resitem{Completed a thorough literature review, in both academic and commercial content, of the area of vehicle positioning systems, with an emphasis on autonomous vehicles.}
+		\resitem{Investigated the state-of-the-art of localised vehicle positioning and the various algorithms used. Built Matlab simulation to test algorithms, e.g. non-linear Kalman filtering.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Signal Processing Research, UCD}{June 2009 - August 2009}{Research assistant}{}
+	\begin{itemize}
+		\resitem{Completed a thorough literature review into the area of Ultra-wideband Communications and Compressive Sampling.}
+		\resitem{Wrote algorithms in Matlab demonstrating the application of new sampling approaches.}
+		\resitem{Submitted comprehensive report to supervisor to appraise research group of where the field of study currently stands, and of my own progress in developing original work, including a simulation package written in Matlab.}
+		\resitem{Attained valuable experience of full-time academic research environment, including time management and project planning.}
+	\end{itemize}
+
+
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\resheading{\textit{Other Skills} \vspace{-5mm}}
+ \line(1, 0){532}
+  \vspace{-3mm}
+
+\begin{description}
+\item[Proficient in:]
+C++, C,  Java, Python, \LaTeX%.
+\item[Working knowledge of:]
+C\#, Javascript, HTML.
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{8pt}
+
+\resheading{\textit{Hobbies and Interests}\vspace{-5mm}}
+ \line(1,0){532}
+  \vspace{-3mm}
+
+\begin{description}
+\item[Coding:] \hfill
+\vspace{-2mm}
+\begin{itemize}
+\resitem[$\--$]{I am passionate about software and spend a lot of my spare time learning new skills,  working on my own projects and reading software texts.}
+\resitem[$\--$]{I love to work on some Github projects when time allows. They can be seen at: \href{http://github.com/ruarcs}{github.com/ruarcs}}
+\resitem[$\--$]{I take online courses on \href{coursera.org}{Coursera} in things like \href{https://www.coursera.org/course/algs4partI}{Algorithms}, \href{https://www.coursera.org/course/progfun}{Functional Programming}, \href{https://www.coursera.org/course/programdesign}{Structured Program Design} and more.}
+\resitem[$\--$]{Member of the Association for Computing Machinery, allowing me to keep up to date on cutting edge developments in the world of software.}
+\end{itemize}
+
+
+\end{description}
+
+\end{document}
